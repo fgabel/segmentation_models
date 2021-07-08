@@ -69,7 +69,12 @@ class BackbonesFactory(ModelsFactory):
                            'block3a_expand_activation', 'block2a_expand_activation'),
         'efficientnetb7': ('block6a_expand_activation', 'block4a_expand_activation',
                            'block3a_expand_activation', 'block2a_expand_activation'),
-
+        'efficientnetv2b': ('block6a_expand_activation', 'block4a_expand_activation',
+                            'block3a_expand_activation', 'block2a_expand_activation'),
+        'efficientnetv2s': ('block6a_expand_activation', 'block4a_expand_activation',
+                           'block3a_expand_activation', 'block2a_expand_activation'),
+        'efficientnetv2m': ('block6a_expand_activation', 'block4a_expand_activation',
+                            'block3a_expand_activation', 'block2a_expand_activation')
     }
 
     _models_update = {
@@ -84,6 +89,9 @@ class BackbonesFactory(ModelsFactory):
         'efficientnetb5': [eff.EfficientNetB5, eff.preprocess_input],
         'efficientnetb6': [eff.EfficientNetB6, eff.preprocess_input],
         'efficientnetb7': [eff.EfficientNetB7, eff.preprocess_input],
+        'efficientnetv2b': [eff.EfficientNetV2B, eff.preprocess_input],
+        'efficientnetv2s': [eff.EfficientNetV2S, eff.preprocess_input],
+        'efficientnetv2m': [eff.EfficientNetV2M, eff.preprocess_input],
     }
 
     # currently not supported
